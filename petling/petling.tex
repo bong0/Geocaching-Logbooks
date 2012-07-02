@@ -1,0 +1,91 @@
+%%%%
+%%  LaTeX Logbook for a micro-sized cache
+% Author: bongo 2011,2012
+% !!! you have to use the flag "-shell-escape" to use the barcode hack !!! 
+%
+%Usage of the embedded Logo under permission of Groundspeak Inc.
+% "The Groundspeak Geocaching Logo may be used only on non-commercial items.
+% These items may include, but are not limited to shirts, hats, coins, logbooks, stickers and
+%cache containers" from https://www.geocaching.com/about/logousage.aspx at
+%(22.06.11)
+%
+%% I don't provide the logo, but you could download it here:
+%%% http://www.treasuresofthemountains.eu/images/Geocaching_Logo.jpg
+%%% or https://shinaz.deviantart.com/art/GeoCaching-com-s-Logo-57016206 and modify the path 
+%%%%
+\documentclass[10pt]{article}
+\usepackage[left=0.5cm,right=0.5cm,bottom=0.9cm,head=1cm,foot=0cm]{geometry}
+\geometry{a4paper}
+\input{../common/header}
+
+% Geocaching specific variables, please change!
+\newcommand{\gccID}{GCXXXXX} % id @geocaching.com
+\newcommand{\ocID}{OCXXXX} % id @ opencaching.de
+% static, dont't necessarily change
+\newcommand{\gccBaseURL}{http://www.geocaching.com/seek/cache_details.aspx?wp=}
+\newcommand{\ocBaseURL}{http://www.opencaching.de/viewcache.php?wp=}
+
+\begin{document}	
+		\begin{multicols}{2}[][1mm]{
+		\newcounter{col}
+		\forloop[1]{col}{1}{\value{col} < 3}{	 	
+			\begin{minipage}{\linewidth} %encapsulate text to prevent moving to other column
+				\centering
+				\begin{Huge}
+					\fontfamily{kpsans}\selectfont				
+						\sf % set sans serif
+						\textbf{LOGBUCH}\\	%logbook
+					\normalfont					
+					
+					\textbf{Cache} 
+					\vspace*{-1cm}
+					% the qr-code embedding the link to the cache listing(s)
+					\begin{align*}
+						\begin{pspicture}
+		   						\psbarcode[scalex=0.8, scaley=0.8]{\gccBaseURL\gccID}{}{qrcode}
+		  				\end{pspicture}
+						&&\makebox[4.5cm][c]{\fillrule{0.1mm}}&&
+						\begin{pspicture}
+				   			\psbarcode[scalex=0.8, scaley=0.8]{\ocBaseURL\ocID}{}{qrcode}
+				  		\end{pspicture}
+					\end{align*}
+
+					%\vspace*{0.3cm}
+					\includegraphics[width=0.45\linewidth]{../common/Geocaching_Logo} \\
+					\vspace*{-0.1cm}
+					\textbf{Besitzer:} \\ %owner
+					\vspace{4mm}
+					\makebox[4cm][c]{\fillrule{0.1mm}}				
+					\normalfont
+				\end{Huge}
+			\\
+			\input{../common/cachenote_german}
+			\end{minipage}
+			\vfill	
+			}
+		}
+	\end{multicols}
+	\newpage % force new page
+	%\addtolength{\textheight}{6cm} % increase page size since we moved head ()  
+	%\vspace*{-4cm}
+	\begin{small}
+
+		\newcounter{line}		 	
+		\begin{table}[ht]
+			\begin{tabular}{ccc|ccc}
+					\forloop[1]{line}{1}{\value{line} < 20}{
+						\forloop[1]{col}{1}{\value{col} < 7}{
+							\begin{minipage}{2.8cm}
+								Name: \fillrule{0.0002pt} \break
+								Datum:\fillrule{0.0002pt} \break
+								\setlength{\fboxsep}{0.8mm}
+								Zeit: \noindent \fbox{\phantom{0000}}\vspace{-3\fboxrule}\fbox{\phantom{0000}}
+							\end{minipage}
+							& %end table column 
+		    			}\\
+		    		}
+		    \end{tabular}
+		\end{table}
+
+	\end{small}
+\end{document}

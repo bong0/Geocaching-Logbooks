@@ -1,0 +1,30 @@
+\usepackage[parfill]{parskip}
+% German Includes %
+\usepackage[ngerman]{babel}
+\selectlanguage{ngerman}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc} 
+% General optimization %
+\usepackage{mdwlist} %for compact lists and so on...
+\usepackage{hyperref}% url embedding
+% Additional Document specific includes %
+\usepackage{multicol} % multicolumn layout
+	\setlength{\columnseprule}{0.01pt} % separation line width
+\usepackage{forloop} % for content generating loop
+\usepackage{graphicx} % embedding images
+\usepackage{caption}
+\usepackage[sfmath]{kpfonts} %% sfmath option only to make math in sans serif. 
+
+% hacks to use pstricks dependent barcode generator in pdflatex %
+\usepackage[pdf]{pstricks}
+\usepackage{auto-pst-pdf}
+\usepackage{pst-barcode} % for qr-codes
+
+%  next line is from http://stackoverflow.com/questions/2553392/latex-rule-filling-the-line %
+\newcommand{\fillrule}[2][0em]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill}
+
+\setlength{\topskip}{0pt}
+\addtolength{\voffset}{-3.2cm} % move head into non-visible above page borders
+\addtolength{\textheight}{3.2cm} % increase page size since we moved head ()  
+
+\pagestyle{empty}

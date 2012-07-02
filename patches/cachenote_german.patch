@@ -1,0 +1,22 @@
+--- cachenote_german.txt	2012-07-02 01:42:00.901768455 +0200
++++ cachenote_german.tex	2012-07-02 01:42:55.948384599 +0200
+@@ -14,13 +14,14 @@
+ WENN DU DIES DURCH ZUFALL GEFUNDEN HAST
+ 
+ Grossartig! Du bist herzlich eingeladen mitzumachen. Wir bitten Dich nur um folgendes:
+-	Bitte verstecke den Behälter nicht woanders und beschädige ihn nicht. Der wahre Wert liegt im Finden des Behälters und im Austausch der Gedanken mit allen Anderen, die diesen Behälter noch finden werden.
+-	Bitte trage Deinen Besuch vorort im Logbuch ein. Wenn Du willst, entnimm etwas aus dem "Schatz". Hinterlasse aber dann bitte auch etwas im Behälter für andere Schatzsucher.
+-	Wenn möglich, lasse uns wissen, dass du den Behälter gefunden hast, indem Du Dich über die unten aufgeführte Web-Seite meldest.
+-
++\begin{itemize*}
++	\item Bitte verstecke den Behälter nicht woanders und beschädige ihn nicht. Der wahre Wert liegt im Finden des Behälters und im Austausch der Gedanken mit allen Anderen, die diesen Behälter noch finden werden.
++	\item Bitte trage Deinen Besuch vorort im Logbuch ein. Wenn Du willst, entnimm etwas aus dem "Schatz". Hinterlasse aber dann bitte auch etwas im Behälter für andere Schatzsucher.
++	\item Wenn möglich, lasse uns wissen, dass du den Behälter gefunden hast, indem Du Dich über die unten aufgeführte Web-Seite meldest.
++\end{itemize*}
+ Der GPS Stash Hunt ist offen für jeden mit einem GPS und etwas Sinn für Abenteuer. Es gibt viele ähnliche Verstecke auf der ganzen Welt. Im Augenblick hat die Organisation ihren Sitz im Internet. Besuche unsere Website, wenn Du mehr wissen willst oder Kommentare hast:
+ 
+-http://www.geocaching.com
++\url{http://www.geocaching.com}
+ 
+ Wenn dieser Behälter auf privatem Grund und Boden liegt und Du möchtest, dass er entfernt wird, teile uns dies bitte mit (contact@geocaching.com). 
+ Wir entschuldigen uns schon im Voraus dafür.

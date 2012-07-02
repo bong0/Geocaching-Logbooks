@@ -1,0 +1,19 @@
+--- geocachenote.txt	2012-07-02 01:41:57.388438345 +0200
++++ geocachenote.tex	2012-07-02 01:44:53.201610318 +0200
+@@ -9,11 +9,11 @@
+ IF YOU FOUND THIS CONTAINER BY ACCIDENT:
+ 
+ Great!  You are welcome to join us!  We ask only that you:
+-
+-·	Please do not move or vandalize the container. The real treasure is just finding the container and sharing your thoughts with everyone else who finds it.
+-·	If you wish, go ahead and take something. But please also leave something of your own for others to find, and write it in the logbook.
+-·	If possible, let us know that you found it, by visiting the website listed below.
+-
++\begin{itemize*}
++	\item Please do not move or vandalize the container. The real treasure is just finding the container and sharing your thoughts with everyone else who finds it.
++	\item If you wish, go ahead and take something. But please also leave something of your own for others to find, and write it in the logbook.
++	\item If possible, let us know that you found it, by visiting the website listed below.
++\end{itemize*}
+ Geocaching is open to everyone with a GPS and a sense of adventure.  There are similar sites all over the world. Currently, the organization has its home on the Internet. Visit our website if you want to learn more, or have any comments:
+ 
+ http://www.geocaching.com
