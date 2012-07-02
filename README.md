@@ -1,2 +1,2 @@
 ##### Setup Instructions
-    ./setup.sh # loads and patches official geocaching disclaimers in German and English
+    ./setup.sh # prepares the build environment, standard texts and graphics
